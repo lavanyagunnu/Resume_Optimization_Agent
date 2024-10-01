@@ -1,0 +1,28 @@
+version: '3'
+services:
+  server:
+    build: .
+    ports:
+      - "9999:9999"
+    container_name: tcp-server
+
+  client1:
+    build: .
+    container_name: tcp-client1
+    command: python client.py
+    depends_on:
+      - server
+
+  client2:
+    build: .
+    container_name: tcp-client2
+    command: python client.py
+    depends_on:
+      - server
+
+  client3:
+    build: .
+    container_name: tcp-client3
+    command: python client.py
+    depends_on:
+      - server
