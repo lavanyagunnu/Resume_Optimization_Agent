@@ -1,0 +1,12 @@
+crewai 
+crewai-tools 
+gradio 
+openai 
+pydantic
+huggingface_hub 
+transformers 
+accelerate  
+langchain_community 
+langchain_huggingface
+gradio
+snowflake-connector-python
